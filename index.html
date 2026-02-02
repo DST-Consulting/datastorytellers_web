@@ -4,18 +4,19 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Data Storytellers Consulting</title>
-  <meta name="description" content="Analyses statistiques, tableaux de bord, suivi-évaluation et solutions IA pour l’aide à la décision." />
+  <meta name="description" content="Analyses statistiques, conseil financier, S&E, tableaux de bord, solutions IA et aide à la décision." />
   <link rel="stylesheet" href="assets/style.css" />
+  <script defer src="assets/site.js"></script>
 </head>
 <body>
   <header class="container header">
     <div class="brand">Data Storytellers Consulting</div>
     <nav class="nav">
-      <a href="#services">Services</a>
-      <a href="#realisations">Réalisations</a>
-      <a href="#secteurs">Secteurs</a>
-      <a href="#methode">Méthode</a>
-      <a class="btn" href="#contact">Contact</a>
+      <a href="index.html">Accueil</a>
+      <a href="services.html">Services</a>
+      <a href="realisations.html">Réalisations</a>
+      <a href="methode.html">Méthode</a>
+      <a class="btn" href="contact.html">Contact</a>
     </nav>
   </header>
 
@@ -23,110 +24,43 @@
     <section class="hero">
       <h1>Transformez vos données en décisions.</h1>
       <p>
-        Analyses statistiques, conseil financier, suivi-évaluation, tableaux de bord et solutions IA
-        pour piloter la performance et l’impact.
+        Nous accompagnons entreprises, administrations publiques, ONG et particuliers avec des analyses statistiques,
+        tableaux de bord, suivi-évaluation, conseil financier et solutions IA pour piloter la performance et l’impact.
       </p>
       <div class="hero-actions">
-        <a class="btn" href="#contact">Demander un devis</a>
-        <a class="btn ghost" href="#realisations">Voir nos réalisations</a>
+        <a class="btn" href="contact.html">Demander un devis</a>
+        <a class="btn ghost" href="realisations.html">Voir nos réalisations</a>
       </div>
     </section>
 
-    <section id="services" class="section">
-      <h2>Services</h2>
+    <section class="section">
+      <h2>Ce que nous faisons</h2>
       <div class="grid">
         <article class="card">
-          <h3>Analyses statistiques</h3>
-          <p>Exploration, tests, segmentation, prévisions, enquêtes et reporting.</p>
-        </article>
-        <article class="card">
-          <h3>Conseil financier</h3>
-          <p>Diagnostics, performance, ratios, modèles et appui à la décision.</p>
-        </article>
-        <article class="card">
-          <h3>Suivi & Évaluation (S&E)</h3>
-          <p>Cadres logiques, indicateurs, collecte, analyse, capitalisation.</p>
+          <h3>Analyses & Modélisation</h3>
+          <p>Exploration, tests, segmentation, prévisions et reporting orienté décision.</p>
         </article>
         <article class="card">
           <h3>Tableaux de bord</h3>
-          <p>Dashboards interactifs, KPIs, automatisation des mises à jour.</p>
+          <p>KPIs, dashboards interactifs, automatisation des mises à jour.</p>
         </article>
         <article class="card">
-          <h3>Solutions IA</h3>
-          <p>Automatisation, assistants, extraction d’informations, classification.</p>
+          <h3>IA & automatisation</h3>
+          <p>Agents, génération de rapports, extraction et classification de données.</p>
         </article>
       </div>
     </section>
 
-    <section id="realisations" class="section">
-      <h2>Réalisations</h2>
-      <div class="grid">
-        <article class="card">
-          <h3>Employabilité</h3>
-          <p>Tableau de bord interactif sur des indicateurs d’employabilité.</p>
-        </article>
-        <article class="card">
-          <h3>Dons de sang – Douala</h3>
-          <p>Suivi des campagnes, volumes, tendances et zones de mobilisation.</p>
-        </article>
-        <article class="card">
-          <h3>Agent IA – rapports statistiques</h3>
-          <p>Automatisation de la rédaction et standardisation des rapports.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="secteurs" class="section">
+    <section class="section">
       <h2>Secteurs</h2>
       <div class="chips">
         <span>Entreprises</span><span>Administrations publiques</span><span>ONG</span><span>Particuliers</span><span>Tout public</span>
       </div>
-    </section>
-
-    <section id="methode" class="section">
-      <h2>Notre méthode</h2>
-      <ol class="steps">
-        <li><b>Cadrage</b> : objectifs, indicateurs, sources, livrables.</li>
-        <li><b>Préparation</b> : collecte, nettoyage, qualité et traçabilité.</li>
-        <li><b>Analyse</b> : statistiques, modèles, interprétation orientée décision.</li>
-        <li><b>Restitution</b> : dashboard/rapport + recommandations actionnables.</li>
-      </ol>
-    </section>
-
-    <section id="contact" class="section">
-      <h2>Contact</h2>
-      <p>Décrivez votre besoin. Nous répondons rapidement.</p>
-
-      <!-- Remplacez l'action par votre endpoint Formspree (voir étape 5) -->
-      <form class="form" action="https://formspree.io/f/XXXXXXX" method="POST">
-        <label>
-          Nom
-          <input name="name" required />
-        </label>
-        <label>
-          Email
-          <input type="email" name="email" required />
-        </label>
-        <label>
-          Message
-          <textarea name="message" rows="5" required></textarea>
-        </label>
-        <button class="btn" type="submit">Envoyer</button>
-      </form>
-
-      <p class="muted">
-        Vous pouvez aussi nous écrire directement : <a href="mailto:contact@datastorytellers.com">contact@datastorytellers.com</a>
-      </p>
     </section>
   </main>
 
   <footer class="container footer">
     <small>© <span id="year"></span> Data Storytellers Consulting</small>
   </footer>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
-
